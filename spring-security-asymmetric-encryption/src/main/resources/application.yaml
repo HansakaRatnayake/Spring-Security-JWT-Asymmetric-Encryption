@@ -1,3 +1,21 @@
 spring:
   application:
     name: spring-security-asymmetric-encryption
+  datasource:
+    url: jdbc:postgresql://postgres:5432/spring_asymmetric_app_db
+    username: root
+    password: 1234
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostrgreSQLDialect
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+
+
+  app:
+    security:
