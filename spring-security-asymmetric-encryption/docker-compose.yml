@@ -1,0 +1,18 @@
+services:
+  postgres:
+    image: postgres:17.5
+    container_name: postgres_spring_asymmetric
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: 1234
+      PGDATA: /data/postgres
+      POSTGRES_DB: spring_asymmetric_app_db
+    volumes:
+      - postgres:/data/postgres
+    ports:
+      - "5432:5432"
+    restart: always
+
+volumes:
+  postgres:
+
