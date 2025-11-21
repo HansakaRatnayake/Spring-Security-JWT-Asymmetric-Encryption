@@ -6,7 +6,7 @@ import jakarta.persistence.ManyToMany;
 import jakarta.persistence.Table;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
-import util.BaseEntity;
+import com.lezord.app.util.BaseEntity;
 
 import java.util.List;
 
