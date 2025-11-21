@@ -1,4 +1,4 @@
-package util;
+package com.lezord.app.util;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
